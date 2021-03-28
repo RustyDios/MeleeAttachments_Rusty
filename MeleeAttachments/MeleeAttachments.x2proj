@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>09231efc-c3fd-4dbd-a5b7-2c4183722900</Guid>
+    <Name>Melee Attachments</Name>
+    <Description>Cool new stuff!</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>MeleeAttachments</AssemblyName>
+    <RootNamespace>MeleeAttachments</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\LW_Tuple\Classes" />
+    <Folder Include="Src\MeleeAttachments\" />
+    <Folder Include="Src\MeleeAttachments\Classes\" />
+    <Folder Include="Src\LW_Tuple" />
+    <Folder Include="Src\XModBase_Interfaces" />
+    <Folder Include="Src\XModBase_Core_2_0_2" />
+    <Folder Include="Src\XModBase_Core_2_0_2\Classes" />
+    <Folder Include="Src\XModBase_Interfaces\Classes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XcomGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComMeleeAttachments.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComMeleeAttachmentsSetup.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\MeleeAttachMKII.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\LW_Tuple\Classes\LWTuple.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\X2Ability_MeleeAttachments.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\X2Condition_UnitInventoryMelee.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\X2DownloadableContentInfo_MeleeAttachments.uc" />
+    <Content Include="Src\MeleeAttachments\Classes\X2Effect_CoatingImpaired.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\X2Effect_GuardImpaired.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\X2Effect_PommelBladestorm.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\X2Effect_RapierPierce.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\X2Item_MeleeAttachments.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBAbility.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBAbilityTrigger_EventListener.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_AbilityCost.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_AbilityHitResult.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_AbilityName.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_AbilityProperty.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_Concealed.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_CoverType.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_Dead.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_HeightAdvantage.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_MatchingWeapon.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_ReactionFire.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_SourceAbilities.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBCondition_WeaponName.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffectUtilities.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_AbilityCostRefund.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_AddAbility.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_AddAbilityCharges.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_AddItemCharges.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_AddUtilityItem.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_BonusDamageByDamageType.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_BonusRadius.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_ChangeHitResultForAttacker.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_ConditionalBonus.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_ConditionalStatChange.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_DoNotConsumeAllPoints.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_Extended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_GrantReserveActionPoint.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_PermanentStatChange.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_RevealUnit.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBEffect_ToHitModifierByRange.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBTemplateUtilities.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBValue.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBValue_Distance.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBValue_UnitValue.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MeleeAttachments\Classes\XMBValue_Visibility.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Core_2_0_2\Classes\XMBAbilityCost_ActionPoints.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Core_2_0_2\Classes\XMBAbilityMultiTarget_Radius.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Core_2_0_2\Classes\XMBAbilityTag.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Core_2_0_2\Classes\XMBAbilityToHitCalc_StandardAim.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Core_2_0_2\Classes\XMBConfig.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Core_2_0_2\Classes\XMBDownloadableContentInfo_XModBase.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Core_2_0_2\Classes\XMBTargetingMethod_Grenade.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Interfaces\Classes\XMBEffectInterface.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XModBase_Interfaces\Classes\XMBOverrideInterface.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
